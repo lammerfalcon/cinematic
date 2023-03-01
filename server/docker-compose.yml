@@ -1,0 +1,12 @@
+version: '3.6'
+
+services:
+  mongoDB:
+    image: mongo
+    container_name: 'movieology-dg'
+    volumes:
+      - "/Users/rodiongavrilov/Desktop/docker-data/mongoDB"
+    ports:
+      - 27017:27017
+    command:
+      - mongod
